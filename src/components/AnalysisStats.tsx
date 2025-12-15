@@ -1,8 +1,9 @@
 import { styled } from "goober";
 import { useState } from "preact/hooks";
+import { useTranslation } from "../lib/useTranslation";
+import { analysisResultPointState, inspectionState } from "../lib/state";
 import { Divider } from "./Divider";
 import ViewFromPoint from "./ViewFromPoint";
-import { analysisResultPointState, inspectionState } from "../lib/state";
 
 const Header = styled("h2")`
   all: unset;
@@ -40,6 +41,7 @@ export type AnalysisStatsData = {
 };
 
 export default function AnalysisStats({ data }: { data: AnalysisStatsData[] }) {
+  const { t } = useTranslation();
   const [isCollapsed, setIsCollapsed] = useState(false);
   console.log(analysisResultPointState.value);
   const inspectionPointPercentageView = analysisResultPointState.value
@@ -52,12 +54,12 @@ export default function AnalysisStats({ data }: { data: AnalysisStatsData[] }) {
     <>
       <Divider />
       <HeaderContainer>
-        <Header>Visibility</Header>
+        <Header>{t("visibility.title")}</Header>
         <ViewFromPoint />
       </HeaderContainer>
       {inspectionState.value && (
         <InspectionContainer>
-          <InspectionHeader>Inspection view</InspectionHeader>
+          <InspectionHeader>{t("inspection.view")}</InspectionHeader>
           <InspectionHeader>
             {inspectionPointPercentageView
               ? Math.round(inspectionPointPercentageView)
@@ -94,7 +96,7 @@ export default function AnalysisStats({ data }: { data: AnalysisStatsData[] }) {
               color: d.color,
             }))}
             valueheader=""
-            labelheader="Visibility levels"
+            labelheader={t("visibility.levels")}
             precisionpercent={0}
             showtotal={false}
           />

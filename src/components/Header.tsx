@@ -1,4 +1,5 @@
 import { styled } from "goober";
+import { useTranslation } from "../lib/useTranslation";
 import AnalysisSettings from "./AnalysisSettings";
 import Binoculars from "./icons/Binoculars";
 
@@ -18,10 +19,11 @@ const Title = styled("h1")`
 `;
 
 export default function Header() {
+  const { t } = useTranslation();
   return (
     <Wrapper>
       <Binoculars />
-      <Title>View</Title>
+      <Title>{t("header.title")}</Title>
       <AnalysisSettings />
     </Wrapper>
   );

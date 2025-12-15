@@ -1,0 +1,37 @@
+{
+  "geometry": {
+    "source": "Bron geometrie",
+    "target": "Doel geometrie",
+    "selected": "Geselecteerd: {{count}}"
+  },
+  "analysis": {
+    "run": "Analyse uitvoeren",
+    "cancel": "Analyse annuleren",
+    "selectGeometry": "Selecteer ten minste één bron- en één doelgeometrie"
+  },
+  "header": {
+    "title": "Weergave"
+  },
+  "inspection": {
+    "tooltip": "Bekijk lijnen inspecteren vanaf bron",
+    "view": "Inspectieweergave"
+  },
+  "visibility": {
+    "title": "Zichtbaarheid",
+    "levels": "Zichtbaarheidsniveaus"
+  },
+  "settings": {
+    "tracingDensity": "Traceringdichtheid {{mode}}",
+    "mode": {
+      "source": "bron",
+      "target": "doel"
+    },
+    "density": {
+      "high": "Hoog",
+      "medium": "Gemiddeld",
+      "low": "Laag"
+    },
+    "showViewLines": "Bekijk lijnen tonen bij inspectie"
+  }
+}
+

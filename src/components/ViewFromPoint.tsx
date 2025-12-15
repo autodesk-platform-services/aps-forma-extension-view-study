@@ -4,6 +4,7 @@ import { styled } from "goober";
 import * as THREE from "three";
 import { AnalysisResult as ViewFromPointAnalysisResult } from "../lib/analyzeViewFromPoint.worker";
 import AnalyzeViewFromPointWorker from "../lib/analyzeViewFromPoint.worker?worker";
+import { useTranslation } from "../lib/useTranslation";
 import {
   clearInspectionVisualization,
   drawGroupToFormaScene,
@@ -36,6 +37,7 @@ const IconWrapper = styled<{ active: boolean }>("div")`
 const analyzeViewFromPointWorker = signal(new AnalyzeViewFromPointWorker());
 
 export default function ViewFromPoint() {
+  const { t } = useTranslation();
   const sourcePointState = useSignal<THREE.Vector3 | undefined>(undefined);
 
   const parseResultOnMessage = (
@@ -117,7 +119,7 @@ export default function ViewFromPoint() {
   };
 
   return (
-    <weave-tooltip text="Inspect view lines from source" nub="down-right">
+    <weave-tooltip text={t("inspection.tooltip")} nub="down-right">
       <Button onClick={onClick}>
         <IconWrapper active={inspectionState.value}>
           <InspectionIcon />

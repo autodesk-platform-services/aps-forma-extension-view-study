@@ -1,0 +1,37 @@
+{
+  "geometry": {
+    "source": "Geometría fuente",
+    "target": "Geometría objetivo",
+    "selected": "Seleccionado: {{count}}"
+  },
+  "analysis": {
+    "run": "Ejecutar análisis",
+    "cancel": "Cancelar análisis",
+    "selectGeometry": "Seleccione al menos una geometría fuente y una objetivo"
+  },
+  "header": {
+    "title": "Vista"
+  },
+  "inspection": {
+    "tooltip": "Inspeccionar líneas de vista desde la fuente",
+    "view": "Vista de inspección"
+  },
+  "visibility": {
+    "title": "Visibilidad",
+    "levels": "Niveles de visibilidad"
+  },
+  "settings": {
+    "tracingDensity": "Densidad de trazado {{mode}}",
+    "mode": {
+      "source": "fuente",
+      "target": "objetivo"
+    },
+    "density": {
+      "high": "Alta",
+      "medium": "Media",
+      "low": "Baja"
+    },
+    "showViewLines": "Mostrar líneas de vista en la inspección"
+  }
+}
+

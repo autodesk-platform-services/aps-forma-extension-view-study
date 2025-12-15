@@ -1,4 +1,5 @@
 import { styled } from "goober";
+import { useTranslation } from "../lib/useTranslation";
 import GeometryIcon from "./icons/GeometryIcon";
 
 const ToggleButton = styled("button")<{
@@ -51,6 +52,7 @@ export function GeometrySelectionButton({
   onClick,
   disabled,
 }: Props) {
+  const { t } = useTranslation();
   return (
     <ToggleButton
       borderColor={color}
@@ -62,7 +64,7 @@ export function GeometrySelectionButton({
       <GeometryIcon color={color} />
       <ButtonText>
         <span style="font: var(--11-medium);">{buttonText}</span>
-        <span>Selected: {elementsSelected}</span>
+        <span>{t("geometry.selected", { count: elementsSelected })}</span>
       </ButtonText>
       {elementsSelected > 0 && <forma-check style={{ color }} />}
     </ToggleButton>

@@ -1,0 +1,37 @@
+{
+  "geometry": {
+    "source": "Forrás geometria",
+    "target": "Cél geometria",
+    "selected": "Kiválasztva: {{count}}"
+  },
+  "analysis": {
+    "run": "Elemzés futtatása",
+    "cancel": "Elemzés megszakítása",
+    "selectGeometry": "Válasszon ki legalább egy forrás- és egy célgeometriát"
+  },
+  "header": {
+    "title": "Nézet"
+  },
+  "inspection": {
+    "tooltip": "Nézetvonalak ellenőrzése a forrásból",
+    "view": "Ellenőrzési nézet"
+  },
+  "visibility": {
+    "title": "Láthatóság",
+    "levels": "Láthatósági szintek"
+  },
+  "settings": {
+    "tracingDensity": "Követési sűrűség {{mode}}",
+    "mode": {
+      "source": "forrás",
+      "target": "cél"
+    },
+    "density": {
+      "high": "Magas",
+      "medium": "Közepes",
+      "low": "Alacsony"
+    },
+    "showViewLines": "Nézetvonalak megjelenítése ellenőrzéskor"
+  }
+}
+

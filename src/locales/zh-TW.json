@@ -1,0 +1,37 @@
+{
+  "geometry": {
+    "source": "來源幾何",
+    "target": "目標幾何",
+    "selected": "已選擇: {{count}}"
+  },
+  "analysis": {
+    "run": "執行分析",
+    "cancel": "取消分析",
+    "selectGeometry": "請至少選擇一個來源幾何和一個目標幾何"
+  },
+  "header": {
+    "title": "檢視"
+  },
+  "inspection": {
+    "tooltip": "檢查來自來源的視線",
+    "view": "檢查檢視"
+  },
+  "visibility": {
+    "title": "可見性",
+    "levels": "可見性層級"
+  },
+  "settings": {
+    "tracingDensity": "追蹤密度 {{mode}}",
+    "mode": {
+      "source": "來源",
+      "target": "目標"
+    },
+    "density": {
+      "high": "高",
+      "medium": "中",
+      "low": "低"
+    },
+    "showViewLines": "檢查時顯示視線"
+  }
+}
+

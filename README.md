@@ -1,6 +1,6 @@
 # View Analysis Extension for Autodesk Forma
 
-This extension is built using the Forma SDK as an Embedded View on the right menu analysis panel. The public extension id for this extension is **EXT_ID**.
+This extension is built using the Forma SDK as an Embedded View on the right menu analysis panel. The public extension id for this extension is **9a266428-3f6a-448a-b521-77b26ebd4b0f**.
 
 - [Motivation](#motivation)
 - [Usage](#usage)
@@ -26,7 +26,7 @@ The extension offers Autodesk Forma users two types of view analysis:
 - analysis of the view from a certain point to selected volumes (buildings etc.) or areas (zones, vegetation),
 - analysis of the view from volumes/areas to a volume
 
-This extension was also developed to demonstrate the capabilities of the [forma-embedded-view-sdk](http://github.com/spacemakerai/forma-embedded-view-sdk).
+This extension was also developed to demonstrate the capabilities of the [forma-embedded-view-sdk](https://www.npmjs.com/package/forma-embedded-view-sdk).
 
 ## Usage
 
@@ -331,4 +331,4 @@ Set up an extension in Forma to load `http://localhost:5173` as the extension UR
 
 This extension is updated using continuous integration and deployment. In practice, each commit to the `main` branch of this repo triggers [GitHub Actions](https://docs.github.com/en/actions) to build the static files, upload them to [GitHub pages](https://pages.github.com/) and finally deploy the changes so that the update reaches end users within a minute of the commit.
 
-Check out the workflows in `.github/workflows/buildanddeploy.yaml` to learn more about how this has been configured -- it constitutes a simple example of how to do CI/CD to get you started if you want to do something similar.
+Check out the workflows in `.github/workflows/build.yml` to learn more about how this has been configured -- it constitutes a simple example of how to do CI/CD to get you started if you want to do something similar.

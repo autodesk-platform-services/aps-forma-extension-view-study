@@ -1,0 +1,37 @@
+{
+  "geometry": {
+    "source": "Källgeometri",
+    "target": "Målgeometri",
+    "selected": "Valt: {{count}}"
+  },
+  "analysis": {
+    "run": "Kör analys",
+    "cancel": "Avbryt analys",
+    "selectGeometry": "Välj minst en käll- och en målgeometri"
+  },
+  "header": {
+    "title": "Vy"
+  },
+  "inspection": {
+    "tooltip": "Inspektera vyrader från källa",
+    "view": "Inspektionsvy"
+  },
+  "visibility": {
+    "title": "Synlighet",
+    "levels": "Synlighetsnivåer"
+  },
+  "settings": {
+    "tracingDensity": "Spårningstäthet {{mode}}",
+    "mode": {
+      "source": "källa",
+      "target": "mål"
+    },
+    "density": {
+      "high": "Hög",
+      "medium": "Medel",
+      "low": "Låg"
+    },
+    "showViewLines": "Visa vyrader vid inspektion"
+  }
+}
+

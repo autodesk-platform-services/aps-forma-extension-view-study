@@ -1,0 +1,37 @@
+{
+  "geometry": {
+    "source": "ソースジオメトリ",
+    "target": "ターゲットジオメトリ",
+    "selected": "選択済み: {{count}}"
+  },
+  "analysis": {
+    "run": "分析を実行",
+    "cancel": "分析をキャンセル",
+    "selectGeometry": "少なくとも1つのソースジオメトリと1つのターゲットジオメトリを選択してください"
+  },
+  "header": {
+    "title": "ビュー"
+  },
+  "inspection": {
+    "tooltip": "ソースからのビューラインを検査",
+    "view": "検査ビュー"
+  },
+  "visibility": {
+    "title": "可視性",
+    "levels": "可視性レベル"
+  },
+  "settings": {
+    "tracingDensity": "トレーシング密度 {{mode}}",
+    "mode": {
+      "source": "ソース",
+      "target": "ターゲット"
+    },
+    "density": {
+      "high": "高",
+      "medium": "中",
+      "low": "低"
+    },
+    "showViewLines": "検査時にビューラインを表示"
+  }
+}
+

@@ -1,6 +1,7 @@
 import { signal } from "@preact/signals";
 import { Forma } from "forma-embedded-view-sdk/auto";
 import { Vector3 } from "three";
+import i18n from "./i18n";
 import { getSceneVertexPositions } from "./utils";
 import { AnalysisResult as ViewFromPointAnalysisResult } from "../lib/analyzeViewFromPoint.worker";
 
@@ -73,4 +74,9 @@ Forma.selection.getSelection().then((paths) => {
 /** Subscribe the the current selection from Forma */
 Forma.selection.subscribe(({ paths }) => {
   currentSelectionState.value = paths;
+});
+
+// Handle locale updates from Forma
+Forma.onLocaleUpdate(({ locale }) => {
+  i18n.changeLanguage(locale);
 });

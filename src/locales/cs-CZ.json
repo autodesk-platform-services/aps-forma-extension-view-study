@@ -1,0 +1,37 @@
+{
+  "geometry": {
+    "source": "Zdrojová geometrie",
+    "target": "Cílová geometrie",
+    "selected": "Vybrano: {{count}}"
+  },
+  "analysis": {
+    "run": "Spustit analýzu",
+    "cancel": "Zrušit analýzu",
+    "selectGeometry": "Vyberte alespoň jednu zdrojovou a jednu cílovou geometrii"
+  },
+  "header": {
+    "title": "Pohled"
+  },
+  "inspection": {
+    "tooltip": "Zkontrolovat linie pohledu ze zdroje",
+    "view": "Inspekční pohled"
+  },
+  "visibility": {
+    "title": "Viditelnost",
+    "levels": "Úrovně viditelnosti"
+  },
+  "settings": {
+    "tracingDensity": "Hustota trasování {{mode}}",
+    "mode": {
+      "source": "zdroj",
+      "target": "cíl"
+    },
+    "density": {
+      "high": "Vysoká",
+      "medium": "Střední",
+      "low": "Nízká"
+    },
+    "showViewLines": "Zobrazit linie pohledu při inspekci"
+  }
+}
+

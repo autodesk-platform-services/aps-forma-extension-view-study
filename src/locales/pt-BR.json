@@ -1,0 +1,37 @@
+{
+  "geometry": {
+    "source": "Geometria de origem",
+    "target": "Geometria de destino",
+    "selected": "Selecionado: {{count}}"
+  },
+  "analysis": {
+    "run": "Executar análise",
+    "cancel": "Cancelar análise",
+    "selectGeometry": "Selecione pelo menos uma geometria de origem e uma de destino"
+  },
+  "header": {
+    "title": "Visualização"
+  },
+  "inspection": {
+    "tooltip": "Inspecionar linhas de visualização da origem",
+    "view": "Visualização de inspeção"
+  },
+  "visibility": {
+    "title": "Visibilidade",
+    "levels": "Níveis de visibilidade"
+  },
+  "settings": {
+    "tracingDensity": "Densidade de rastreamento {{mode}}",
+    "mode": {
+      "source": "origem",
+      "target": "destino"
+    },
+    "density": {
+      "high": "Alta",
+      "medium": "Média",
+      "low": "Baixa"
+    },
+    "showViewLines": "Mostrar linhas de visualização na inspeção"
+  }
+}
+

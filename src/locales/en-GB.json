@@ -1,0 +1,37 @@
+{
+  "geometry": {
+    "source": "Source geometry",
+    "target": "Target geometry",
+    "selected": "Selected: {{count}}"
+  },
+  "analysis": {
+    "run": "Run analysis",
+    "cancel": "Cancel analysis",
+    "selectGeometry": "Select at least one source and one target geometry"
+  },
+  "header": {
+    "title": "View"
+  },
+  "inspection": {
+    "tooltip": "Inspect view lines from source",
+    "view": "Inspection view"
+  },
+  "visibility": {
+    "title": "Visibility",
+    "levels": "Visibility levels"
+  },
+  "settings": {
+    "tracingDensity": "Tracing density {{mode}}",
+    "mode": {
+      "source": "source",
+      "target": "target"
+    },
+    "density": {
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "showViewLines": "Show view lines on inspection"
+  }
+}
+

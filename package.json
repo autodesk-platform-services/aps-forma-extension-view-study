@@ -11,18 +11,19 @@
   "dependencies": {
     "@preact/signals": "^2.0.1",
     "@turf/boolean-point-in-polygon": "^7.2.0",
-    "forma-embedded-view-sdk": "^0.87.0",
+    "forma-embedded-view-sdk": "^0.89.0",
     "goober": "^2.1.16",
+    "i18next": "^25.6.3",
     "preact": "^10.25.4",
-    "three": "^0.172.0",
-    "three-mesh-bvh": "^0.8.3"
+    "three": "0.181.2",
+    "three-mesh-bvh": "^0.9.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.9.4",
     "@types/geojson": "^7946.0.15",
-    "@types/three": "0.172.0",
+    "@types/three": "0.181.0",
     "typescript": "^5.7.3",
-    "vite": "^6.0.7"
+    "vite": "^7.0.0"
   },
-  "packageManager": "pnpm@9.6.0"
+  "packageManager": "pnpm@10.24.0+sha512.01ff8ae71b4419903b65c60fb2dc9d34cf8bb6e06d03bde112ef38f7a34d6904c424ba66bea5cdcf12890230bf39f9580473140ed9c946fef328b6e5238a345a"
 }

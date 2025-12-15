@@ -1,0 +1,37 @@
+{
+  "geometry": {
+    "source": "Geometria źródłowa",
+    "target": "Geometria docelowa",
+    "selected": "Wybrano: {{count}}"
+  },
+  "analysis": {
+    "run": "Uruchom analizę",
+    "cancel": "Anuluj analizę",
+    "selectGeometry": "Wybierz co najmniej jedną geometrię źródłową i jedną docelową"
+  },
+  "header": {
+    "title": "Widok"
+  },
+  "inspection": {
+    "tooltip": "Sprawdź linie widoku ze źródła",
+    "view": "Widok inspekcji"
+  },
+  "visibility": {
+    "title": "Widoczność",
+    "levels": "Poziomy widoczności"
+  },
+  "settings": {
+    "tracingDensity": "Gęstość śledzenia {{mode}}",
+    "mode": {
+      "source": "źródło",
+      "target": "cel"
+    },
+    "density": {
+      "high": "Wysoka",
+      "medium": "Średnia",
+      "low": "Niska"
+    },
+    "showViewLines": "Pokaż linie widoku podczas inspekcji"
+  }
+}
+

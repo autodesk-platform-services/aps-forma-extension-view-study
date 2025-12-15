@@ -1,0 +1,37 @@
+{
+  "geometry": {
+    "source": "소스 지오메트리",
+    "target": "대상 지오메트리",
+    "selected": "선택됨: {{count}}"
+  },
+  "analysis": {
+    "run": "분석 실행",
+    "cancel": "분석 취소",
+    "selectGeometry": "최소 하나의 소스 지오메트리와 하나의 대상 지오메트리를 선택하세요"
+  },
+  "header": {
+    "title": "뷰"
+  },
+  "inspection": {
+    "tooltip": "소스에서 뷰 라인 검사",
+    "view": "검사 뷰"
+  },
+  "visibility": {
+    "title": "가시성",
+    "levels": "가시성 수준"
+  },
+  "settings": {
+    "tracingDensity": "추적 밀도 {{mode}}",
+    "mode": {
+      "source": "소스",
+      "target": "대상"
+    },
+    "density": {
+      "high": "높음",
+      "medium": "중간",
+      "low": "낮음"
+    },
+    "showViewLines": "검사 시 뷰 라인 표시"
+  }
+}
+

@@ -6,6 +6,7 @@ import {
   DENSITY_TARGET_DEFAULT,
   SelectionMode,
 } from "../lib/state";
+import { useTranslation } from "../lib/useTranslation";
 
 // Setup goober
 setup(h);
@@ -17,11 +18,12 @@ function ComplexitySelector({
   selectionMode: SelectionMode;
   value: string;
 }) {
+  const { t } = useTranslation();
   return (
     <div>
       <div style="padding: 8px 3px;">
         <span style="font-size: 11px; font-weight: 600; color: #3c3c3c;">
-          Tracing density {selectionMode}
+          {t("settings.tracingDensity", { mode: t(`settings.mode.${selectionMode}`) })}
         </span>
       </div>
 
@@ -38,21 +40,21 @@ function ComplexitySelector({
           <weave-radio-button
             style="margin-bottom: 2px;"
             value="high"
-            label="High"
+            label={t("settings.density.high")}
             id={`high-${selectionMode}`}
             checked={value === "high"}
           ></weave-radio-button>
           <weave-radio-button
             style="margin-bottom: 2px;"
             value="medium"
-            label="Medium"
+            label={t("settings.density.medium")}
             id={`medium-${selectionMode}`}
             checked={value === "medium"}
           ></weave-radio-button>
           <weave-radio-button
             value="low"
             id={`low-${selectionMode}`}
-            label="Low"
+            label={t("settings.density.low")}
             checked={value === "low"}
           ></weave-radio-button>
         </weave-radio-button-group>
@@ -71,9 +73,10 @@ const ViewLinesWrapper = styled("div")`
 `;
 
 function ShowViewLines({ value }: { value: boolean }) {
+  const { t } = useTranslation();
   return (
     <ViewLinesWrapper>
-      <div>Show view lines on inspection</div>
+      <div>{t("settings.showViewLines")}</div>
       <weave-toggle
         toggled={value}
         onChange={(e) => {

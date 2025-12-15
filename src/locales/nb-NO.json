@@ -1,0 +1,37 @@
+{
+  "geometry": {
+    "source": "Kildegeometri",
+    "target": "Målgeometri",
+    "selected": "Valgt: {{count}}"
+  },
+  "analysis": {
+    "run": "Kjør analyse",
+    "cancel": "Avbryt analyse",
+    "selectGeometry": "Velg minst én kilde- og én målgeometri"
+  },
+  "header": {
+    "title": "Utsikt"
+  },
+  "inspection": {
+    "tooltip": "Inspiser utsiktslinjer fra kilde",
+    "view": "Inspeksjonsvisning"
+  },
+  "visibility": {
+    "title": "Synlighet",
+    "levels": "Synlighetsnivåer"
+  },
+  "settings": {
+    "tracingDensity": "Sporingstetthet {{mode}}",
+    "mode": {
+      "source": "kilde",
+      "target": "mål"
+    },
+    "density": {
+      "high": "Høy",
+      "medium": "Middels",
+      "low": "Lav"
+    },
+    "showViewLines": "Vis utsiktslinjer ved inspeksjon"
+  }
+}
+

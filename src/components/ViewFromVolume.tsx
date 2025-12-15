@@ -3,6 +3,7 @@ import { Urn } from "forma-embedded-view-sdk/elements/types";
 import { styled } from "goober";
 import { AnalysisResult } from "../lib/analyzeViewFromVolume.worker";
 import AnalyzeViewFromVolumeWorker from "../lib/analyzeViewFromVolume.worker?worker";
+import { useTranslation } from "../lib/useTranslation";
 import {
   SOURCE_COLOR,
   SOURCE_COLOR_TRANSPARENT,
@@ -87,6 +88,7 @@ type Element = {
 };
 
 export default function ViewFromVolume2() {
+  const { t } = useTranslation();
   const sourceElementsSelectionState = useSignal<
     | {
         volumeElements: Element[];
@@ -283,7 +285,7 @@ export default function ViewFromVolume2() {
   return (
     <div>
       <GeometrySelectionButton
-        buttonText="Source geometry"
+        buttonText={t("geometry.source")}
         color={SOURCE_COLOR}
         backgroundColor={SOURCE_COLOR_TRANSPARENT}
         elementsSelected={numSelectedSources}
@@ -292,7 +294,7 @@ export default function ViewFromVolume2() {
         disabled={inspectionState.value}
       />
       <GeometrySelectionButton
-        buttonText="Target geometry"
+        buttonText={t("geometry.target")}
         color={TARGET_COLOR}
         backgroundColor={TARGET_COLOR_TRANSPARENT}
         elementsSelected={numSelectedTargets}
@@ -303,18 +305,18 @@ export default function ViewFromVolume2() {
 
       {isAnalysisInProgress && (
         <RunButton onClick={stopAnalysis} variant="outlined">
-          Cancel analysis
+          {t("analysis.cancel")}
         </RunButton>
       )}
 
       {!isGeometrySelected && (
         <weave-tooltip
-          text="Select at least one source and one target geometry"
+          text={t("analysis.selectGeometry")}
           width="200px"
           style="width: 100%"
         >
           <RunButton variant="solid" disabled={true}>
-            Run analysis
+            {t("analysis.run")}
           </RunButton>
         </weave-tooltip>
       )}
@@ -325,7 +327,7 @@ export default function ViewFromVolume2() {
           onClick={runAnalysis}
           disabled={inspectionState.value}
         >
-          Run analysis
+          {t("analysis.run")}
         </RunButton>
       )}
 

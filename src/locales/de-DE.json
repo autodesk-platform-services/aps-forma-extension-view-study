@@ -1,0 +1,37 @@
+{
+  "geometry": {
+    "source": "Quellgeometrie",
+    "target": "Zielgeometrie",
+    "selected": "Ausgewählt: {{count}}"
+  },
+  "analysis": {
+    "run": "Analyse ausführen",
+    "cancel": "Analyse abbrechen",
+    "selectGeometry": "Wählen Sie mindestens eine Quell- und eine Zielgeometrie aus"
+  },
+  "header": {
+    "title": "Sicht"
+  },
+  "inspection": {
+    "tooltip": "Sichtlinien von Quelle inspizieren",
+    "view": "Inspektionsansicht"
+  },
+  "visibility": {
+    "title": "Sichtbarkeit",
+    "levels": "Sichtbarkeitsstufen"
+  },
+  "settings": {
+    "tracingDensity": "Verfolgungsdichte {{mode}}",
+    "mode": {
+      "source": "Quelle",
+      "target": "Ziel"
+    },
+    "density": {
+      "high": "Hoch",
+      "medium": "Mittel",
+      "low": "Niedrig"
+    },
+    "showViewLines": "Sichtlinien bei Inspektion anzeigen"
+  }
+}
+
